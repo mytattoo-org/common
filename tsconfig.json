@@ -12,11 +12,6 @@
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "forceConsistentCasingInFileNames": true,
-    "paths": {
-      "@frontend/*": ["../frontend/src/*"],
-      "@backend/*": ["../backend/src/*"]
-    }
-  },
-  "references": [{ "path": "../backend" }]
+    "forceConsistentCasingInFileNames": true
+  }
 }
