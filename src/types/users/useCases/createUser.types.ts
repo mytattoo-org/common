@@ -1,5 +1,5 @@
-import type { TResponse } from '../global/TResponse.types'
-import { IUserModel } from './userModel.types'
+import { TResponse } from '../../global/TResponse.types'
+import { IUserModel } from '../models/userModel.types'
 
 interface ICreateUserRequest {
   email: IUserModel['email']

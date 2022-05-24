@@ -1,4 +1,4 @@
-import { TResponse } from '../global/TResponse.types'
+import { TResponse } from '../../global/TResponse.types'
 
 interface ISignInRequest {
   password: string

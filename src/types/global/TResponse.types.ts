@@ -1,4 +1,4 @@
-import { IThrowAppErrorResponse } from '../errors/ThrowAppError.types'
+import { IThrowAppErrorResponse } from '../errors/useCases/ThrowAppError.types'
 
 type TResponse<T> = T & Partial<IThrowAppErrorResponse>
 
