@@ -6,12 +6,19 @@ interface IUpdateUserRequestParams {
 }
 
 interface IUpdateUserRequest
-  extends Partial<Omit<IUserModel, 'id' | 'created_at' | 'updated_at'>> {
+  extends Partial<
+    Omit<IUserModel, 'avatar' | 'id' | 'created_at' | 'updated_at'>
+  > {
+  avatar?: string
   new_password?: string
 }
 
+interface IUpdateUserResponse extends Omit<IUserModel, 'password' | 'avatar'> {
+  avatar?: string
+}
+
 interface IResponse {
-  updatedUser: Omit<IUserModel, 'password'>
+  updatedUser: IUpdateUserResponse
 }
 
 type TUpdateUserResponse = TResponse<IResponse>
