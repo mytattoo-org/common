@@ -2,8 +2,8 @@ interface IUserModel {
   id: string
   bio?: string
   email: string
-  artist: boolean
   avatar?: Buffer
+  artist?: boolean
   password: string
   username: string
   created_at: string
