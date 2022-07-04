@@ -6,7 +6,9 @@ interface IUpdateUserRequestParams {
 }
 
 interface IUpdateUserRequest
-  extends Partial<Omit<IUserModel, 'id' | 'created_at' | 'updated_at'>> {}
+  extends Partial<Omit<IUserModel, 'id' | 'created_at' | 'updated_at'>> {
+  new_password?: string
+}
 
 interface IResponse {
   updatedUser: Omit<IUserModel, 'password'>
