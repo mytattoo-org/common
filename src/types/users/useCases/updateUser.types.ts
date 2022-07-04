@@ -1,5 +1,6 @@
 import type { TResponse } from '../../global/TResponse.types'
 import type { IUserModel } from '../models/userModel.types'
+import type { IUserResponse } from './readUsers.types'
 
 interface IUpdateUserRequestParams {
   id: IUserModel['id']
@@ -13,12 +14,8 @@ interface IUpdateUserRequest
   new_password?: string
 }
 
-interface IUpdateUserResponse extends Omit<IUserModel, 'password' | 'avatar'> {
-  avatar?: string
-}
-
 interface IResponse {
-  updatedUser: IUpdateUserResponse
+  updatedUser: IUserResponse
 }
 
 type TUpdateUserResponse = TResponse<IResponse>
