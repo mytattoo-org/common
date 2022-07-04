@@ -3,7 +3,7 @@ interface IUserModel {
   bio?: string
   email: string
   artist: boolean
-  avatar?: string
+  avatar?: Buffer
   password: string
   username: string
   created_at: string
