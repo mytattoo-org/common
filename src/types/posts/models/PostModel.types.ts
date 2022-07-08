@@ -9,4 +9,8 @@ interface IPostModel {
   user_id: IUserModel['id']
 }
 
-export type { IPostModel }
+interface IPost extends Omit<IPostModel, 'image'> {
+  image: string
+}
+
+export type { IPostModel, IPost }

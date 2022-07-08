@@ -12,4 +12,8 @@ interface IUserModel {
   short_bio?: string
 }
 
-export type { IUserModel }
+interface IUser extends Omit<IUserModel, 'password' | 'avatar'> {
+  avatar: string
+}
+
+export type { IUserModel, IUser }

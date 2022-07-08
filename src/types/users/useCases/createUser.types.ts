@@ -1,15 +1,14 @@
 import type { TResponse } from '../../global/TResponse.types'
-import type { IUserModel } from '../models/userModel.types'
-import type { IUserResponse } from './readUsers.types'
+import type { IUser, IUserModel } from '../models/userModel.types'
 
 interface ICreateUserRequest {
-  email: IUserModel['email']
-  username: IUserModel['username']
+  email: IUser['email']
+  username: IUser['username']
   password: IUserModel['password']
 }
 
 interface IResponse {
-  createdUser: IUserResponse
+  createdUser: IUser
 }
 
 type TCreateUserResponse = TResponse<IResponse>

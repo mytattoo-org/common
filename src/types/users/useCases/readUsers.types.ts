@@ -1,19 +1,15 @@
 import type { TResponse } from '../../global/TResponse.types'
-import type { IUserModel } from '../models/userModel.types'
+import type { IUser } from '../models/userModel.types'
 
 interface IReadUsersRequestParams {
-  id?: IUserModel['id']
-}
-
-interface IUserResponse extends Omit<IUserModel, 'password' | 'avatar'> {
-  avatar: string
+  id?: IUser['id']
 }
 
 interface IResponse {
-  user?: IUserResponse
-  users?: IUserResponse[]
+  user?: IUser
+  users?: IUser[]
 }
 
 type TReadUsersResponse = TResponse<IResponse>
 
-export type { TReadUsersResponse, IReadUsersRequestParams, IUserResponse }
+export type { TReadUsersResponse, IReadUsersRequestParams }

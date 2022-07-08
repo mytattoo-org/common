@@ -1,9 +1,8 @@
 import type { TResponse } from '../../global/TResponse.types'
-import type { IUserModel } from '../models/userModel.types'
-import type { IUserResponse } from './readUsers.types'
+import type { IUser, IUserModel } from '../models/userModel.types'
 
 interface IUpdateUserRequestParams {
-  id: IUserModel['id']
+  id: IUser['id']
 }
 
 interface IUpdateUserRequest
@@ -15,7 +14,7 @@ interface IUpdateUserRequest
 }
 
 interface IResponse {
-  updatedUser: IUserResponse
+  updatedUser: IUser
 }
 
 type TUpdateUserResponse = TResponse<IResponse>
