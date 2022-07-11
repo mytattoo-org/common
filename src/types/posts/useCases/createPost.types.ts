@@ -1,8 +1,10 @@
 import type { TResponse } from '../../global/TResponse.types'
+import type { IFeed } from '../models/feedModel.types'
 import type { IPost } from '../models/postModel.types'
 
 interface IResponse {
   createdPost: IPost
+  createdFeed: IFeed
 }
 
 type TCreatePostResponse = TResponse<IResponse>
