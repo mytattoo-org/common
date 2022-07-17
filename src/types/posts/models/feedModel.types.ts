@@ -1,5 +1,5 @@
-import type { IUser, IUserModel } from 'src/types/users/models/userModel.types'
-import type { IPost, IPostModel } from 'src/types/posts/models/postModel.types'
+import type { IUser, IUserModel } from '~types/users/models/userModel.types'
+import type { IPost, IPostModel } from '~types/posts/models/postModel.types'
 
 interface IFeedModel {
   id: IPostModel['id']

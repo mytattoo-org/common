@@ -1,4 +1,4 @@
-import { IUserModel } from 'src/types/users/models/userModel.types'
+import type { IUserModel } from '~types/users/models/userModel.types'
 
 interface IPostModel {
   id: string
