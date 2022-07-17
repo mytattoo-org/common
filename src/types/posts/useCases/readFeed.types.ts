@@ -1,5 +1,5 @@
-import type { TResponse } from '~types/global/TResponse.types'
-import type { IFeed } from '~types/posts/models/feedModel.types'
+import type { TResponse } from '../../global/TResponse.types'
+import type { IFeed } from '../../posts/models/feedModel.types'
 
 interface IResponse {
   posts?: IFeed[]

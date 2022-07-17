@@ -1,5 +1,5 @@
-import type { TResponse } from '~types/global/TResponse.types'
-import type { IPost } from '~types/posts/models/postModel.types'
+import type { TResponse } from '../../global/TResponse.types'
+import type { IPost } from '../../posts/models/postModel.types'
 
 interface IResponse {
   deletedPost: IPost

@@ -1,5 +1,5 @@
-import type { TResponse } from '~types/global/TResponse.types'
-import type { IUser } from '~types/users/models/userModel.types'
+import { TResponse } from '../../global/TResponse.types'
+import type { IUser } from '../../users/models/userModel.types'
 
 interface IDeleteUserRequestParams {
   id: IUser['id']

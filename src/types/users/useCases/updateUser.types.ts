@@ -1,5 +1,5 @@
-import type { TResponse } from '~types/global/TResponse.types'
-import type { IUser, IUserModel } from '~types/users/models/userModel.types'
+import type { TResponse } from '../../global/TResponse.types'
+import type { IUser, IUserModel } from '../../users/models/userModel.types'
 
 interface IUpdateUserRequestParams {
   id: IUser['id']
