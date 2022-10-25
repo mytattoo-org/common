@@ -6,7 +6,6 @@ interface IFeedModel {
   image: IPostModel['image']
   created_at: IPostModel['created_at']
   description: IPostModel['description']
-
   avatar: IUserModel['avatar']
   artist: IUserModel['artist']
   user_id: IPostModel['user_id']
