@@ -2,7 +2,7 @@ import type { TResponse } from '../../global/TResponse.types'
 import { IComment } from '../models/commentModel'
 
 interface IResponse {
-  likes?: IComment[]
+  comments?: IComment[]
 }
 
 type TReadCommentsResponse = TResponse<IResponse>
