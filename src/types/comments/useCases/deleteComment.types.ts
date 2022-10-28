@@ -5,10 +5,10 @@ interface IResponse {
   deletedComment: IComment
 }
 
-type TDeleteCommentResponse = TResponse<IResponse>
-
 interface IDeleteCommentRequestParams {
   id: IComment['id']
 }
+
+type TDeleteCommentResponse = TResponse<IResponse>
 
 export type { IDeleteCommentRequestParams, TDeleteCommentResponse }

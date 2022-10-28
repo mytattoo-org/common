@@ -5,10 +5,10 @@ interface IResponse {
   deletedPost: IPost
 }
 
-type TDeletePostResponse = TResponse<IResponse>
-
 interface IDeletePostRequestParams {
   id: IPost['id']
 }
+
+type TDeletePostResponse = TResponse<IResponse>
 
 export type { IDeletePostRequestParams, TDeletePostResponse }

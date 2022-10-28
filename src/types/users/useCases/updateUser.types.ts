@@ -7,10 +7,10 @@ interface IUpdateUserRequestParams {
 
 interface IUpdateUserRequest
   extends Partial<
-    Omit<IUserModel, 'avatar' | 'id' | 'created_at' | 'updated_at'>
+    Omit<IUserModel, 'id' | 'created_at' | 'updated_at' | 'avatar'>
   > {
   avatar?: string
-  new_password?: string
+  newPassword?: string
 }
 
 interface IResponse {

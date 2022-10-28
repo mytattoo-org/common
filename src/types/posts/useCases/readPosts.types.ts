@@ -6,10 +6,10 @@ interface IResponse {
   posts?: IPost[]
 }
 
-type TReadPostsResponse = TResponse<IResponse>
-
 interface IReadPostsRequestParams {
   id?: IPost['id']
 }
+
+type TReadPostsResponse = TResponse<IResponse>
 
 export type { TReadPostsResponse, IReadPostsRequestParams }

@@ -5,11 +5,11 @@ interface IResponse {
   updatedComment: IComment
 }
 
-type TUpdateCommentResponse = TResponse<IResponse>
-
 interface IUpdateCommentRequest {
   id: IComment['id']
   content: IComment['content']
 }
+
+type TUpdateCommentResponse = TResponse<IResponse>
 
 export type { TUpdateCommentResponse, IUpdateCommentRequest }

@@ -7,12 +7,12 @@ interface IResponse {
   createdFeed: IFeed
 }
 
-type TCreatePostResponse = TResponse<IResponse>
-
 interface ICreatePostRequest {
   image: IPost['image']
   user_id: IPost['user_id']
   description?: IPost['description']
 }
+
+type TCreatePostResponse = TResponse<IResponse>
 
 export type { TCreatePostResponse, ICreatePostRequest }

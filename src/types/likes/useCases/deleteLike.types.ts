@@ -5,10 +5,11 @@ interface IResponse {
   deletedLike: ILike
 }
 
-type TDeleteLikeResponse = TResponse<IResponse>
-
-interface IDeleteLikeRequestParams {
-  id: ILike['id']
+interface IDeleteLikeRequest {
+  post_id: ILike['post_id']
+  user_id: ILike['user_id']
 }
 
-export type { IDeleteLikeRequestParams, TDeleteLikeResponse }
+type TDeleteLikeResponse = TResponse<IResponse>
+
+export type { IDeleteLikeRequest, TDeleteLikeResponse }
