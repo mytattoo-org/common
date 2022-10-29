@@ -6,11 +6,11 @@ interface IResponse {
   likes?: ILike[]
 }
 
-interface IReadLikesRequestParams {
+interface IReadLikesRequest {
   post_id?: ILike['post_id']
   user_id?: ILike['user_id']
 }
 
 type TReadLikesResponse = TResponse<IResponse>
 
-export type { TReadLikesResponse, IReadLikesRequestParams }
+export type { TReadLikesResponse, IReadLikesRequest }
