@@ -8,7 +8,7 @@ interface IResponse {
   comments?: IComment[] | ICommentUser[]
 }
 
-interface IReadCommentsRequestParams {
+interface IReadCommentsRequest {
   id?: IComment['id']
   post_id?: IPost['id']
   user_id?: IUser['id']
@@ -16,4 +16,4 @@ interface IReadCommentsRequestParams {
 
 type TReadCommentsResponse = TResponse<IResponse>
 
-export type { TReadCommentsResponse, IReadCommentsRequestParams, ICommentUser }
+export type { TReadCommentsResponse, IReadCommentsRequest, ICommentUser }
