@@ -14,7 +14,6 @@ interface IComment extends ICommentModel {}
 
 interface ICommentUser extends IComment {
   id: IUserModel['id']
-  artist: IUser['artist']
   avatar: IUser['avatar']
   username: IUser['username']
 }

@@ -5,7 +5,6 @@ interface IFeedModel {
   id: IPostModel['id']
   image: IPostModel['image']
   avatar: IUserModel['avatar']
-  artist: IUserModel['artist']
   user_id: IPostModel['user_id']
   username: IUserModel['username']
   created_at: IPostModel['created_at']
@@ -21,7 +20,6 @@ interface IFeed {
   author: {
     id: IUser['id']
     avatar: IUser['avatar']
-    artist: IUser['artist']
     username: IUser['username']
   }
 }
