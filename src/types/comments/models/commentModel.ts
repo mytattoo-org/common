@@ -1,5 +1,5 @@
 import type { IPostModel } from '~types/posts/models/postModel.types'
-import type { IUserModel } from '../../users/models/userModel.types'
+import type { IUser, IUserModel } from '../../users/models/userModel.types'
 
 interface ICommentModel {
   id: string
@@ -12,4 +12,11 @@ interface ICommentModel {
 
 interface IComment extends ICommentModel {}
 
-export type { ICommentModel, IComment }
+interface ICommentUser extends IComment {
+  id: IUserModel['id']
+  artist: IUser['artist']
+  avatar: IUser['avatar']
+  username: IUser['username']
+}
+
+export type { ICommentModel, ICommentUser, IComment }

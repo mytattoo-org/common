@@ -2,9 +2,10 @@ import { IPost } from '~types/posts/models/postModel.types'
 import { IUser } from '~types/users/models/userModel.types'
 import type { TResponse } from '../../global/TResponse.types'
 import { IComment } from '../models/commentModel'
+import { ICommentUser } from './readComments.types'
 
 interface IResponse {
-  createdComment: IComment
+  createdComment: ICommentUser
 }
 
 interface ICreateCommentRequest {
