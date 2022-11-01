@@ -1,5 +1,5 @@
 import type { TResponse } from '../../global/TResponse.types'
-import type { IPost } from '../../posts/models/postModel.types'
+import type { IPost } from '../models/postModel.types'
 
 interface IResponse {
   post?: IPost

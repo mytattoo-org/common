@@ -1,6 +1,6 @@
 import type { TResponse } from '../../global/TResponse.types'
-import type { IFeed } from '../../posts/models/feedModel.types'
-import type { IPost } from '../../posts/models/postModel.types'
+import type { IFeed } from '../models/feedModel.types'
+import type { IPost } from '../models/postModel.types'
 
 interface IResponse {
   createdPost: IPost
